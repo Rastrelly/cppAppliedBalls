@@ -104,7 +104,7 @@ void ball::move(float dt)
 		kx *= -1;
 		x = gfRef->w - r;
 	}
-	if ((y - r) > gfRef->h)
+	if ((y + r) > gfRef->h)
 	{ 
 		ky *= -1;
 		y = gfRef->h - r;
